@@ -58,8 +58,11 @@
 #     print("First letter:", letter2, "Second letter:", letter1)
 
 # если реестр важен (заглавные или маленькие буквы)
+
 # letter1 = input("Enter letter1: ")
 # letter2 = input("Enter letter2: ")
+
+# (letter1.lower() == letter2.lower()) and (letter1 < letter2)
 
 # if letter1.lower() == letter2.lower():
 #     if letter1 < letter2:
