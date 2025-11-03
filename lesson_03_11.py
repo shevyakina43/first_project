@@ -17,3 +17,4 @@ while numbers:
     index2 = index % len(numbers)
     numbers.pop(index2)
     print(numbers)
+
