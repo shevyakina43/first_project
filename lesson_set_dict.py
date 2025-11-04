@@ -25,13 +25,13 @@
 #     print("Hello, all")
 
 # 3
-films = {'Avengers: Endgame': 2019,
-    'Guardians of the Galaxy': 2014,
-    'Iron Man': 2008,
-    'Thor': 2011}
+# films = {'Avengers: Endgame': 2019,
+#     'Guardians of the Galaxy': 2014,
+#     'Iron Man': 2008,
+#     'Thor': 2011}
 
-# sorted(films.items())
-sorted_films = dict(sorted(films.items()))
+# # sorted(films.items())
+# sorted_films = dict(sorted(films.items()))
 
 # print(films)
 # print(sorted(films.items()))
@@ -59,12 +59,68 @@ sorted_films = dict(sorted(films.items()))
 # print(squares)
 
 # 5
-def task5():
-    weeks = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-days = 
+# def task5():
+#     weeks = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+# days = 
 
-n = 
-for name, year in week_dict.items()
-    if number == n:
-        print(day)
-        break
+# n = 
+# for name, year in week_dict.items()
+#     if number == n:
+#         print(day)
+#         break
+
+
+# 6
+def task6():
+    text = "Lorem ipsum dolor sit amet" # создаем переменную text и сохраняем в неё строку
+    text = list(text) # превращаем строку в список символов; теперь каждый символ - отдельный элемент списка
+    letters = {i: text.count(i) for i in text}  # создаем словарь через словарные выражения (dictionary comprehension); для каждого символа i в списке text считаем, сколько раз он встречается
+
+    print(letters) # выволим полученный словарь, где ключ - буква, значение - количество повторений
+
+# 7
+def task7():
+    text = "Project Gutenberg offers over 59,000 free eBooks"
+
+    number_count = 0
+    alpha_count = 0
+
+    for ch in text:
+        if ch.isdigit():
+            number_count += 1
+        elif ch.isalpha():
+            alpha_count += 1
+
+
+    result = {"LETTERS": alpha_count, "DIGITS": number_count}
+
+    # print(result)
+    for key, value in result.items():
+        print(key, value)
+
+# 10
+def task10():
+    number1 = [1, 5, 3, 8, 0, 1]
+    number2 = [23, 9, 0, 1, 5]
+
+    rusult = len(set(number1 + number2))
+    print(rusult)
+
+number1 = {1, 5, 3, 8, 0, 1}
+number2 = {23, 9, 0, 1, 5}
+
+# обьединение множин
+print(number1.union(number2))
+print(number1 | number2) # a | b
+
+# a - b = a (без b)
+print(number1.difference(number2))
+print(number1 - number2)
+
+# обьединение множин - перетин
+print(number1.symmetric_difference(number2))
+print(number1 ^ number2)
+
+# перетин множин (общие элементы)
+print(number1.intersection_update(number2)) 
+print(number1 ^ number2)
