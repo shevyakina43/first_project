@@ -81,21 +81,21 @@
 # а даним цілим додатнім числом n обчисліть n! -
 # значення факторіалу цього числа.
 # Факторіал: n! = 1 * 2 * 3 * ... * (n-1) * n
-n = int(input("Count: "))
+# n = int(input("Count: "))
 
-f= 1
-for i in range(1, n+1):
-    print(i)
-    f *= i
+# f= 1
+# for i in range(1, n+1):
+#     print(i)
+#     f *= i
 
-print(f)
+# print(f)
 
-print("---------")
+# print("---------")
 
-f = 1 
-while n > 0:
-    print(n)
-    f *= n
-    n -= 1
+# f = 1 
+# while n > 0:
+#     print(n)
+#     f *= n
+#     n -= 1
 
-print(f)
+# print(f)
