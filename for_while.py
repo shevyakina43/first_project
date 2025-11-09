@@ -76,6 +76,22 @@
 # 2 ##
 # 1 #
 
+# n = int(input("Enter number: "))
+# # for i in range(n, 0, -1):
+# #     print(i, "#" * i)   # функция "#" * i  умножение ряда, делает н ряд с симфолом решетка
+
+# while n > 0:   # цикл вай повторяется столько, пока н больше 0
+#     print(n, "#" * n)
+#     # n -= 1
+
+# def coundown(n):
+#     if n == 0:
+#         return
+#     print(n, "#" * n)
+#     coundown(n - 1)
+# n = int(input("Enter number: "))
+# coundown(n)
+
 
 # # 7
 # Напишіть програму для побудови шаблону як у вихідних даних за введеним значенням n.
@@ -92,8 +108,14 @@
 # 88888888
 # 999999999
 
+# n = int(input("Enter number: "))
+# for i in range(1, n + 1):
+#     print(str(i) * i)     # ряд из i повторов цифры i, если i = 4, то "4" * 4 = "4444" 
 
-
+# i = 1
+# while i <= n:
+#     print(str(i) * i)
+#     i += 1
 
 # Middle level
 # # 8
@@ -120,3 +142,19 @@
 # 200
 # Вихідні дані:
 # 213.84 km, 12 days
+
+# d = float(input("Enter distance on first day: "))  # пробег первого дня
+# t = float(input("Enter target total distance: "))  # цель суммарного пробега
+
+# day = 1  # первый день
+# distance = d  # пробег текущего дня
+# total = d  # суммарный пробег
+
+# while total <= t:
+#     distance = distance * 1.1
+#     total += distance
+#     day += 1
+
+# print(f"{total: .2f} km, {day} days")
+
+# # d и t сразу преобразовываются в float чтобы работать с деситичными, затем day = 1 начинаем с первого дня, в цикле сначала надо увеличить пробег текущего дня на 10 проц, потом привавить к сумме , и потом увеличить счетчик дней, 
